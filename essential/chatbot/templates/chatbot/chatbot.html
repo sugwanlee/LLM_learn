@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if bot_message %}
+<h4>챗봇 : {{bot_message}}</h4>
+{% endif %}
+<form action="{% url "chatbot:chatbot_view" %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="질문하기">
+</form>
+{% endblock content %}

@@ -26,6 +26,7 @@ urlpatterns = [
     path('user/', include("user.urls")),
     # post/로 들어오면 post.urls로 전달
     path('post/', include("post.urls")),
+    path('chatbot/', include("chatbot.urls")),
 ]
 # 이미지 파일을 위한 추가세팅팅
 if settings.DEBUG:

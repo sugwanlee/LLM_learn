@@ -1,0 +1,4 @@
+LLM_env
+.env
+requirements.txt
+essential\db.sqlite3
